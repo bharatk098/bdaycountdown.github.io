@@ -66,9 +66,9 @@ let countDown = new Date('may 18, 2022 22:25:00').getTime(),
         document.getElementById('seconds').innerHTML = Math.floor((distance % (minute)) / second);
       
       //do something later when date is reached
-      //if (distance < 0) {
-      //  clearInterval(x);
-      //  'IT'S MY BIRTHDAY!;
+      if (distance < 0) {
+      clearInterval(x);
+      'IT'S MY BIRTHDAY!;
       //}
 
     }, second)
